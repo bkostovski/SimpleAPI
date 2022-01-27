@@ -8,6 +8,10 @@ trigger:
 
 pool:
   vmImage: 'Ubuntu-16.04'
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '5'
 
 variables:
   buildConfiguration: 'Release'
